@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paw-Pong</title>
+    <link rel="stylesheet" href="/style/style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+    </style>
+  </head>
+  <body>
+    <div class="splash">
+      <img id="logo" src="../img/logo.png" alt="paw-pong" />
+      <ul>
+        <li>let your favourite yarn work for you!</li>
+        <li>1. use 'arrow up' & 'arrow down' to control your cat paw</li>
+        <li>2. when the yarn hit the food or mouse, get 1 score</li>
+      </ul>
+      <input type="text" id="name" value="" placeholder="cat name" />
+      <button id="start">start</button>
+    </div>
+
+    <div class="game">
+      <canvas width="1200" height="800"></canvas>
+    </div>
+    <div class="game-over">
+      <ul class="lastScore">
+        <li>highest score:</li>
+        <li>
+          this time:
+          <sapn id="scoreThisTime"></sapn>
+        </li>
+      </ul>
+      <button id="restart">hungry again</button>
+    </div>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

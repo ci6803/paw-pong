@@ -3,18 +3,18 @@ let canvas = document.querySelector("canvas");
 canvas.style.backgroundColor = "black";
 let ctx = canvas.getContext("2d");
 let background = new Image();
-background.src = "/img/game-background2.jpg";
+background.src = "img/game-background2.jpg";
 let background2 = new Image();
-background2.src = "/img/background-mouse.jpg";
+background2.src = "img/background-mouse.jpg";
 const background3 = new Image();
-background3.src = "/img/background-water.jpg";
+background3.src = "img/background-water.jpg";
 const background4 = new Image();
-background4.src = "/img/background-heart.jpg";
+background4.src = "img/background-heart.jpg";
 //img
 const yarnImg = new Image();
-yarnImg.src = "../img/yarn.png";
+yarnImg.src = "img/yarn.png";
 const pawImg = new Image();
-pawImg.src = "../img/orange-paw.png";
+pawImg.src = "img/orange-paw.png";
 
 // music
 const music = document.querySelector(".sound");
@@ -56,13 +56,13 @@ const winThings = document.getElementById("winThings");
 
 //audio
 let meow = new Audio();
-meow.src = "/music/Meow.m4a";
+meow.src = "music/Meow.m4a";
 meow.volume = 1;
 let pop = new Audio();
-pop.src = "/music/PopSound.m4a";
+pop.src = "music/PopSound.m4a";
 pop.volume = 1;
 const longMeow = new Audio();
-longMeow.src = "/music/Meeeeeow.m4a";
+longMeow.src = "music/Meeeeeow.m4a";
 longMeow.volume = 1;
 
 function game() {

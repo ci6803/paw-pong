@@ -176,6 +176,12 @@ document.addEventListener("keyup", () => {
   isArrowDown = false;
 });
 
+document.addEventListener("keydown", (e) => {
+  if (e.keyCode === 32) {
+    splashScreen();
+  }
+});
+
 function splashScreen() {
   canvas.style.display = "block";
   btnStart.style.display = "none";
@@ -196,6 +202,7 @@ function restart() {
   sound.style.display = "none";
   gameoverImg.style.display = "none";
   soundPlayer.style.display = "none";
+  splashPage.style.display = "none";
 
   yarnX = 80;
   yarnY = 80;
@@ -222,9 +229,9 @@ window.addEventListener("load", () => {
     restart();
   });
 
-  btnRestart.addEventListener("keydown", (e) => {
-    if (e.keyCode === 32) {
-      restart();
-    }
-  });
+  // document.addEventListener("keydown", (e) => {
+  //   if (e.keyCode === 32) {
+  //     restart();
+  //   }
+  // });
 });

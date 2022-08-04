@@ -16,7 +16,7 @@ body {
 #logo {
   width: 50vw;
   padding-top: 2rem;
-  padding-bottom: 4rem;
+  padding-bottom: 2.5rem;
 }
 
 #start,
@@ -30,13 +30,17 @@ body {
   transition-duration: 0.4s;
 }
 
+#start {
+  margin-bottom: 1.5rem;
+}
+
 #start:hover {
   background-color: rgba(221, 108, 166, 0.8);
   color: white;
 }
 
 #restart:hover {
-  background-color: rgba(4, 56, 187, 0.8);
+  background-color: rgba(2, 96, 174, 0.8);
   color: white;
 }
 
@@ -55,6 +59,10 @@ ul li {
   padding: 0.3rem;
 }
 
+.front-list li {
+  list-style-type: "🐾";
+}
+
 .game-over {
   display: flex;
   flex-direction: column;
@@ -63,14 +71,37 @@ ul li {
 }
 
 #restart {
-  margin-top: 25rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .lastScore {
   font-size: 2rem;
-  color: rgba(4, 56, 187);
+  color: rgb(2, 96, 174);
 }
 
 canvas {
-  margin-top: 3rem;
+  margin-top: 3.5rem;
+}
+
+.gameoverImg {
+  margin-top: 1.5rem;
+  width: 30vw;
+}
+
+.btnSound {
+  margin-top: 14rem;
+  padding: 0.5rem;
+
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  transition-duration: 0.4s;
+}
+
+.btnSound:hover {
+  background-color: rgba(254, 177, 89, 0.8);
+  color: white;
 }

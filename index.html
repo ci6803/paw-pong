@@ -13,12 +13,12 @@
   <body>
     <div class="splash">
       <img id="logo" src="../img/logo.png" alt="paw-pong" />
-      <ul>
-        <li>let your favourite yarn work for you!</li>
-        <li>1. use 'arrow up' & 'arrow down' to control your cat paw</li>
-        <li>2. when the yarn hit the food or mouse, get 1 score</li>
+      <ul class="front-list">
+        <li>let your yarn work for you!</li>
+        <li>use 'arrow up' & 'arrow down' to control your cat paw</li>
+        <li>when the yarn hits the cat's favourite things, get 1 point</li>
       </ul>
-      <input type="text" id="name" value="" placeholder="cat name" />
+      <input type="text" id="name" value="your cat" placeholder="cat name" />
       <button id="start">start</button>
     </div>
 
@@ -27,13 +27,29 @@
     </div>
     <div class="game-over">
       <ul class="lastScore">
-        <li>highest score:</li>
-        <li>
-          this time:
-          <sapn id="scoreThisTime"></sapn>
-        </li>
+        <li id="score-board"></li>
+        <li id="scoreThisTime"></li>
+        <li id="winThings"></li>
       </ul>
+      <img class="gameoverImg" src="/img/game-over.gif" alt="game-over" />
       <button id="restart">hungry again</button>
+      <audio class="sound" id="player">
+        <source id="music" src="/music/Funky Beat _ meme (ft. pop cat).mp3" />
+      </audio>
+      <div class="soundPlayer">
+        <button
+          class="btnSound"
+          onclick="document.getElementById('player').play()"
+        >
+          with music
+        </button>
+        <button
+          class="btnSound"
+          onclick="document.getElementById('player').pause()"
+        >
+          pause music
+        </button>
+      </div>
     </div>
     <script src="/js/main.js"></script>
   </body>

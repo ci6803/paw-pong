@@ -229,9 +229,9 @@ window.addEventListener("load", () => {
     restart();
   });
 
-  // document.addEventListener("keydown", (e) => {
-  //   if (e.keyCode === 32) {
-  //     restart();
-  //   }
-  // });
+  document.addEventListener("keydown", (e) => {
+    if (e.keyCode === 32) {
+      restart();
+    }
+  });
 });
